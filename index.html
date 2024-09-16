@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur de Documents</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertisseur de Documents</h1>
+        <input type="file" id="fileInput" accept=".pdf,.xml,.csv,.doc,.docx,.html,.odt,.ppt,.pptx,.rtf,.txt,.xlsx" multiple>
+        <select id="formatSelect">
+            <option value="application/pdf">PDF</option>
+            <option value="application/xml">XML</option>
+            <option value="text/csv">CSV</option>
+            <option value="application/msword">DOC</option>
+            <option value="application/vnd.openxmlformats-officedocument.wordprocessingml.document">DOCX</option>
+            <option value="text/html">HTML</option>
+            <option value="application/vnd.oasis.opendocument.text">ODT</option>
+            <option value="application/vnd.ms-powerpoint">PPT</option>
+            <option value="application/vnd.openxmlformats-officedocument.presentationml.presentation">PPTX</option>
+            <option value="application/rtf">RTF</option>
+            <option value="text/plain">TXT</option>
+            <option value="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">XLSX</option>
+        </select>
+        <button id="convertButton">Convertir</button>
+        
+        <!-- Section pour les liens de téléchargement -->
+        <div id="result" class="hidden">
+            <h2>Documents Convertis</h2>
+            <ul id="downloadList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
